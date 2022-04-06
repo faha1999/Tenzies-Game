@@ -27,7 +27,7 @@ export default function App() {
 
   function allNewDice() {
     const newDice = [];
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 25; i++) {
       newDice.push(generateNewDie());
     }
     return newDice;
