@@ -3,6 +3,7 @@
     grid-template: auto auto / repeat(5, 1fr);
     gap: 20px;
     margin-bottom: 40px;
+    margin-top: 1.25rem;
 }
 
 .die-face {
@@ -30,6 +31,7 @@
     font-size: 1.2rem;
     font-family: 'Karla', sans-serif;
     cursor: pointer;
+    margin-bottom: 1.25rem;
 }
 
 .roll-dice:focus {
@@ -39,3 +41,20 @@
 .roll-dice:active {
     box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
+
+@media screen and (max-width: 600px) {
+    .dice-container {
+        grid-template: auto auto / repeat(5, 1fr);
+        gap: 15px;
+    }
+
+    .die-face {
+        height: 45px;
+        width: 45px;
+        border-radius: 8px;
+    }
+
+    .die-num {
+        font-size: 1.5rem;
+    }
+  }
